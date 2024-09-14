@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body {
+  font-family: 'Lora', serif;
+  text-shadow: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+  background-color: #F0F7FF;
+  
+}
+
+#main-content {
+  text-align: center;
+  padding: 50px 20px;
+  font-family: 'Lora', serif;
+  text-shadow: none;
+  
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 1em;
+  color: black;
+  font-family: 'Lora', serif;
+  text-shadow: none;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 1em;
+  color: black;
+  font-family: 'Lora', serif;
+  text-shadow: none;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 2em;
+  color: black;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills-section {
+  width: 45%;
+  margin-bottom: 2em;
+}
+
+.skill {
+  text-align: left;
+  margin-bottom: 1.5em;
+}
+
+.skill i {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 0.5em;
+}
+
+.skill b {
+  margin: 0 0 0.5em 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.skill-description {
+  font-size: 14px;
+  color: #555;
+}
