@@ -81,17 +81,29 @@ body {
   align-items: center; /* Center align items */
 }
 
+.project-image2 {
+  width: 100%;
+  height: 340px; 
+  margin-bottom: 20px;
+}
 .project-image {
   width: 100%;
   height: 300px; 
   margin-bottom: 20px; /* Space below the image */
+  border-style: none;
 }
 
-.project-image img {
+.project-image2 img {
   width: 100%;
   height: 100%;
   object-fit: contain; /* Ensure images fit within the given dimensions */
   border-radius: 5px; /* Slightly rounded corners for images */
+}
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure images fit within the given dimensions */
+ 
 }
 
 .project-description p {
@@ -104,10 +116,10 @@ body {
 }
 .project-description h4 {
   font-size: 20px;
-  color: #333; /* Dark text color */
+  color:black; /* Dark text color */
   margin: 0; /* Remove margin from paragraphs */
   font-family: 'Lora', serif;
   text-shadow: none;
-  text-align: center; /* Align text to the left for readability */
+  text-align: left; /* Align text to the left for readability */
   font-weight: bold;
 }

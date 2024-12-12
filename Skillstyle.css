@@ -17,7 +17,9 @@ body {
   text-shadow: none;
   
 }
-
+.Title h2 {
+  text-shadow: none !important;
+}
 h2 {
   font-size: 32px;
   margin-bottom: 1em;
@@ -26,17 +28,12 @@ h2 {
   text-shadow: none;
 }
 
-h3 {
-  font-size: 24px;
-  margin-bottom: 1em;
-  color: black;
-  font-family: 'Lora', serif;
-  text-shadow: none;
-}
+
 
 .description {
   font-size: 16px;
   margin-bottom: 2em;
+  font-family: 'Lora', serif;
   color: black;
 }
 
@@ -46,6 +43,13 @@ h3 {
   justify-content: space-between;
 }
 
+h3 {
+  font-size: 32px;
+  margin-bottom: 1em;
+  color: black;
+  font-family: 'Lora', serif;
+  text-shadow: none;
+}
 .skills-section {
   width: 45%;
   margin-bottom: 2em;
@@ -64,11 +68,16 @@ h3 {
 
 .skill b {
   margin: 0 0 0.5em 0;
+  font-size: 18px;
+  color: black;
+
+}
+.skill p{
+  font-family: 'Lora', serif;
   font-size: 16px;
-  color: #333;
 }
 
 .skill-description {
-  font-size: 14px;
-  color: #555;
+  font-size: 16px;
+  color: black;
 }
