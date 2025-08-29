@@ -163,3 +163,137 @@ body {
 .contact-info a:hover {
     text-decoration: underline;  
 }
+
+/* --- Responsive layout for About --- */
+@media (max-width: 1024px) {
+  .about-details { gap: 20px; }
+  .profile-pic { max-width: 420px; }
+}
+@media (max-width: 768px) {
+  .about-details { flex-direction: column; align-items: center; text-align: left; }
+  .details-left, .details-right, .profile-pic-container { padding: 10px; width: 100%; }
+  .details-left p, .details-right p { font-size: 15px; }
+  .profile-pic { width: 90%; max-width: 380px; }
+  .about-container { padding: 20px; }
+}
+@media (max-width: 420px) {
+  .details-left p, .details-right p { font-size: 14px; }
+  .resume-button .hover-button { font-size: 14px; padding: 8px 14px; }
+}
+
+img { max-width: 100%; height: auto; }
+
+
+:root { --accent: #6c63ff; }
+
+/* Timeline rail */
+.h-timeline {
+  position: relative;
+  display: flex;
+  gap: clamp(18px, 3vw, 40px);
+  padding: clamp(36px, 6vw, 60px) clamp(4px, 1vw, 10px);
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  
+}
+.h-timeline::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0; right: 0;
+  height: 3px;
+  background: #ccc;
+  z-index: 0;
+}
+
+/* Each item */
+.h-item {
+  position: relative;
+  flex: 0 0 clamp(240px, 30vw, 320px);
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+/* Step dot */
+
+
+/* Year pill (closer to the line) */
+.h-year {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: clamp(12px, 1.6vw, 14px);
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 20px;
+  z-index: 2;
+  white-space: nowrap;
+}
+
+/* Card box */
+.h-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: clamp(14px, 2vw, 20px);
+  margin-top: clamp(36px, 5vw, 60px); /* responsive gap */
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.05);
+  text-align: left;
+  position: relative;
+
+}
+.h-card::before {
+  content: "";
+  position: absolute;
+  top: calc(-1 * clamp(36px, 5vw, 60px));
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: clamp(36px, 5vw, 60px);
+  background: var(--accent);
+}
+
+/* Typography */
+.h-role {
+  font-size: clamp(16px, 2vw, 18px);
+  margin: 0 0 4px 0;
+  font-weight: 600;
+}
+.h-org {
+  color: #333;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+.h-card p {
+  font-size: clamp(13px, 1.8vw, 14.5px);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Hover */
+.h-card:hover {
+  box-shadow: 0 6px 22px rgba(0,0,0,0.12);
+  transform: translateY(-2px);
+  transition: all .25s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .h-timeline { gap: 20px; }
+  .h-item { flex: 0 0 80%; }
+}
+@media (max-width: 420px) {
+  .h-timeline { flex-direction: column; padding: 20px 0; }
+  .h-item { flex: 1 1 auto; margin-bottom: 40px; }
+  .h-step { top: 0; transform: translate(-50%, -50%); }
+  .h-year { top: -28px; }
+  .h-card { margin-top: 30px; }
+}
+
+

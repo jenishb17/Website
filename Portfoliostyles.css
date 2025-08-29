@@ -1,110 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-/* Portfoliostyles.css */
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   background: none;
-  background-color: white;
+  background-color: white; /* White background */
+  color: black;
 }
 
 #main-content {
   text-align: center;
-  padding: 50px 20px;
+  padding: 40px 20px;
   font-family: 'Lora', serif;
-  text-shadow: none;
+  color:black;
+}
+/* Main portfolio title */
+#main-content h2 {
+  font-family: 'Lora', serif;
+  font-size: clamp(24px, 2.6vw, 34px); /* responsive scaling */
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  color: black;
+  text-align: center;
 }
 
+/* Carousel container */
 .carousel-container {
   position: relative;
-  width: 20%;
+  width: 100%;
+  max-width: 1100px;
   overflow: hidden;
-  display: flex;
-  align-items: center;
   margin: 0 auto;
 }
 
+/* Track */
 .carousel {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  overflow: hidden;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-.portfolio-item {
-  min-width: calc(33.33% - 20px); /* Adjusted to fit 3 items within 100% container width */
-  margin: 0 10px;
-  text-decoration: none;
-  color: black;
-  flex-shrink: 0;
-}
-
-.portfolio-image {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
+/* Each slide */
+.carousel-slide {
+  min-width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
 
+.slide-image {
+  width: 45%;
+  border-radius: 8px;
+  margin-right: 40px;
+  object-fit: cover;
+}
+
+.slide-details {
+  width: 55%;
+  text-align: left;
+}
+
+.slide-details h3 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  font-family: 'Lora', serif;
+}
+
+.slide-details p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Lora', serif;
+}
+
+/* Buttons */
 .scroll-button {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
   border: none;
   cursor: pointer;
-  padding: 10px;
+  padding: 12px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 1;
+  z-index: 5;
   font-size: 2em;
 }
+.scroll-button.left { left: 10px; }
+.scroll-button.right { right: 10px; }
 
-.scroll-button.left {
-  left: 10px;
-}
-
-.scroll-button.right {
-  right: 10px;
-}
-
-.project-section {
-  display: flex;
-  align-items: center;
-  padding: 100px 20px;
-  border-top: 1px solid #e0e0e0;
-  margin-top: 50px;
-  justify-content: center;
-  color: black;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.section-image {
-  width: 40%;
-  height: 300px;
-  object-fit: cover;
-  margin-right: 40px;
-  color: black;
-}
-
-.project-details {
-  text-align: left;
-  max-width: 100%;
-}
-
-.project-details h3 {
-  font-size: 34px;
-  margin-bottom: 20px;
-  width: 100%;
-  font-family: 'Lora', serif;
-  text-shadow: none;
-}
-
-.project-details p {
-  font-size: 16px;
-  font-family: 'Lora', serif;
-  text-shadow: none;
-
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-slide {
+    flex-direction: column;
+    text-align: center;
+  }
+  .slide-image {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .slide-details {
+    width: 100%;
+  }
+  .slide-details h3 { font-size: 22px; }
+  .slide-details p { font-size: 15px; }
 }

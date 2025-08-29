@@ -123,6 +123,8 @@ body {
   font-size: 24px;
   transition: opacity 0.5s ease-in-out; 
   opacity: 1; 
+
+  padding-top: 60px;
 }
 
 /* Heading styles within the main content */
@@ -173,3 +175,30 @@ h2 {
   font-family: 'Lora', serif;
   text-shadow: none;
 }
+
+/* --- Responsive tweaks --- */
+@media (max-width: 1024px) {
+  #main-content h2 { font-size: 42px; }
+  #main-content div { font-size: 18px; }
+  .nav-links li { margin: 0 12px; }
+}
+
+@media (max-width: 768px) {
+  body { background-attachment: scroll; }
+  .nav-links { justify-content: flex-start; overflow-x: auto; white-space: nowrap; padding: 0 10px; }
+  .nav-links li { margin: 0 8px; }
+  .nav-links button { font-size: 14px; padding: 8px 10px; top: 0; }
+  .nav-links img { padding: 6px 10px; top: 0; }
+  #main-content h2 { font-size: 34px; }
+  #main-content div { font-size: 16px; }
+  .footer b { font-size: 18px; }
+  .footer p { font-size: 12px; }
+}
+
+@media (max-width: 420px) {
+  .nav-links button { font-size: 12px; padding: 6px 8px; }
+  #main-content h2 { font-size: 28px; }
+  #main-content div { font-size: 15px; }
+}
+
+img { max-width: 100%; height: auto; }

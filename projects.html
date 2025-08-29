@@ -1,113 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="Projectstyle.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects</title>
+  <!-- Dark card grid styles -->
+  <link rel="stylesheet" href="Projectstyle.css" />
 </head>
 <body>
-    <main id="main-content">
-    <section class="projects">
+  <main id="main-content">
+    <h2>My Projects</h2>
+    <p class="page-subtitle">My Personal Projects and Ideas</p>
 
+    <div class="projects">
+      <!-- ============ Card 1 ============ -->
+      <div class="project-box">
+        <div class="project-image">
+          <img src="images/StockPrediction.png" alt="AI & ML Stock Prediction preview" />
+        </div>
+        <div class="project">
+          <h3>AI and Machine Learning Stock Prediction Software</h3>
+          <div class="project-description">
+            <h4>Overview</h4>
+            <p>
+              ML-driven pipeline that ingests historical data, extracts features, and generates price
+              predictions to help explore market trends and backtest simple strategies.
+            </p>
+          </div>
+          <a class="github-link" href="https://github.com/jenishb17/AI-Stock-Predictor.git" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
 
-        <div class="project-box">
-            <a href="https://github.com/jenishb17/AI-Stock-Predictor.git" class="github-link">GITHUB Link</a>
-            <div class="arrow"></div>
-            <h3>AI and Machine Learning Stock Prediction Software</h3>
-            <div class="project">
-                <div class="project-image">
-                    <img src="images/StockPrediction.png" alt="AI and Machine Learning Stock Prediction Software">
-                </div>
-                <div class="project-description">
-                    <h4>What is it?</h4>
-                    <p>I developed an AI-powered stock prediction tool that analyzes historical data and macroeconomic indicators, 
-                    a predictive accuracy of 85%. 
-                    </p>
-                    <br>
-                    <h4>What was used?</h4>
-                    <p>
-                        This project integrated machine learning models with a data pipeline that incorporates 
-                        Python libraries for data fetching, preprocessing, and model training. Leveraging tools like Yahoo Finance API 
-                        for stock data, APScheduler for automated retraining, and Matplotlib for data visualization, 
-                        the system enhances overall robustness and accuracy.  
-                    </p>
-                    <br>
-                    <h4>The interface?</h4>
-                    <p>                       
-                    The tool includes a Flask web interface for user interaction, 
-                    automated model retraining, and comprehensive data visualization.
-                    </p>
-                </div>
-            </div>
+      <!-- ============ Card 2 ============ -->
+      <div class="project-box">
+        <div class="project-image2">
+          <img src="images/StudentDatabase.png" alt="Student Database application UI" />
         </div>
-        <div class="project-box">
-            <a href="https://github.com/jenishb17/Student-Database.git" class="github-link">GITHUB Link</a>
-            <div class="arrow"></div>
-            <h3>Student Database Software</h3>
-            <div class="project">
-                <div class="project-image2">
-                    <img src="images/StudentDatabase.png" alt="Student Database">
-                </div>
-                <div class="project-description">
-                    <h4>What is it?</h4>
-                    <p>
-                        I created an XML-based database integration using VBA and SQL to connect Microsoft Access with Excel, 
-                        significantly transforming data handling processes. 
-                        This project involved designing and implementing a seamless data transfer mechanism between Access and Excel, 
-                        ensuring data integrity and efficiency. 
-                    </p>
-                    <br>
-                    <h4>What does it to?</h4>
-                    <p>
-                        By utilizing VBA, I automated complex data tasks and streamlined workflows, 
-                        reducing manual input and error rates. 
-                        Additionally, I employed SQL for advanced data queries and manipulations, 
-                        enabling robust data analysis and reporting capabilities. 
-                    </p>
-                    <br>
-                    <h4>How Did it Help?</h4>
-                    <p>
-                        This integration demonstrated my advanced database management skills, 
-                        as I developed a system that optimized data processing, improved accuracy, 
-                        and enhanced overall operational efficiency, 
-                        showcasing the full potential of Microsoft Office tools in a professional setting.
-                    </p>
-                </div>
-            </div>
+        <div class="project">
+          <h3>Student Database Software</h3>
+          <div class="project-description">
+            <h4>Overview</h4>
+            <p>
+              VBA application for managing student records with search, validation, and reporting.
+              Built to streamline routine admin tasks and demonstrate practical data handling.
+            </p>
+          </div>
+          <a class="github-link" href="https://github.com/jenishb17/Student-Database.git" target="_blank" rel="noopener">GitHub</a>
         </div>
-        <div class="project-box">
-            <a href="https://github.com/jenishb17/Air-Math-Calculator" class="github-link">GITHUB Link</a>
-            <div class="arrow"></div>
-            <h3>Air Math Calculator</h3>
-            <div class="project">
-                <div class="project-image">
-                    <img src="images/AirMath.png" alt="Project 3">
-                </div>
-                <div class="project-description">
-                    <h4>What is it?</h4>
-                    <p>It’s a real-time computer vision-based tool that turns a webcam into a virtual whiteboard, allowing users to draw math expressions in the air using only their index finger. 
-                        The system uses fingertip tracking powered by MediaPipe to trace gestures onto a digital canvas.
-                    </p>
-                    <br>
-                    <h4>What Does it Do?</h4>
-                    <p>
-                        It continuously monitors the webcam feed, detects when the user’s index finger is extended, 
-                        and draws its movement onto a white canvas. 
-                        Once the user finishes drawing, 
-                        the tool uses OCR to convert the air-drawn expression into text and evaluates the result instantly.
+      </div>
 
-                    </p>
-                    <br>
-                    <h4>How Does it Help?</h4>
-                    <p>
-                        It enables a hands-free and hardware-free method for solving math, ideal for presentations, classroom use, or individuals with mobility limitations. By combining gesture recognition with math OCR, 
-                        it makes learning and computation more interactive, accessible, and engaging.
-                    </p>
-                </div>
-            </div>
+      <!-- ============ Card 3 ============ -->
+      <div class="project-box">
+        <div class="project-image">
+          <img src="images/AirMath.png" alt="Air Math Calculator interface" />
         </div>
-    </section>
-</main>
+        <div class="project">
+          <h3>Air Math Calculator</h3>
+          <div class="project-description">
+            <h4>Overview</h4>
+            <p>
+              Gesture-friendly math tool concept that pairs OCR with lightweight processing
+              for quick calculations, designed for approachability and accessibility.
+            </p>
+          </div>
+          <a class="github-link" href="https://github.com/jenishb17/Air-Math-Calculator" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- See more -->
+    <div class="see-more">
+      <a href="https://github.com/jenishb17" target="_blank" rel="noopener">see more ›</a>
+    </div>
+  </main>
 </body>
 </html>
