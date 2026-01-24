@@ -32,9 +32,8 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "nav-glass shadow-md py-3" : "bg-transparent py-5"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "nav-glass shadow-md py-3" : "bg-transparent py-5"
+        }`}
     >
       <div className="section-container">
         <div className="flex items-center justify-between">
@@ -45,9 +44,13 @@ export const Navbar = () => {
               e.preventDefault();
               handleNavClick("#home");
             }}
-            className="text-xl font-bold tracking-tight"
+            className="flex items-center"
           >
-            <span className="gradient-text">JB</span>
+            <img
+              src="/me.jpeg"
+              alt="Jenish Bharucha"
+              className="w-9 h-9 rounded-full object-cover ring-2 ring-primary/20 hover:ring-primary/40 transition-all"
+            />
           </a>
 
           {/* Desktop Navigation */}
@@ -75,7 +78,7 @@ export const Navbar = () => {
               className="gap-2 border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground transition-all"
               asChild
             >
-              <a href="/resume.pdf" download>
+              <a href="/Jenish_CS_Resume_2025.pdf" download>
                 <FileText className="h-4 w-4" />
                 Resume
               </a>
@@ -114,7 +117,7 @@ export const Navbar = () => {
                 className="mt-2 gap-2 border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground"
                 asChild
               >
-                <a href="/resume.pdf" download>
+                <a href="/Jenish_CS_Resume_2025.pdf" download>
                   <FileText className="h-4 w-4" />
                   Download Resume
                 </a>

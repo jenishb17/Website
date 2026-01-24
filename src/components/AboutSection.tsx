@@ -28,14 +28,14 @@ export const AboutSection = () => {
             {/* Text Content */}
             <div className="md:col-span-3 space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a fourth-year double-degree student (BBA + Computer Science) who mixes 
-                business thinking with technical execution. I've worked in finance/operations, 
-                built automation systems, created machine learning projects, and enjoy building 
+                I'm a fourth-year double-degree student (BBA + Computer Science) who mixes
+                business thinking with technical execution. I've worked in finance/operations,
+                built automation systems, created machine learning projects, and enjoy building
                 startup ideas.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I care about clean design, strong documentation, and turning messy problems 
-                into structured solutions. Whether it's optimizing a data pipeline or crafting 
+                I care about clean design, strong documentation, and turning messy problems
+                into structured solutions. Whether it's optimizing a data pipeline or crafting
                 an investor-grade report, I focus on delivering impact.
               </p>
             </div>
@@ -43,12 +43,14 @@ export const AboutSection = () => {
             {/* Profile Card */}
             <div className="md:col-span-2">
               <div className="card-premium p-6 text-center">
-                <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-primary-glow flex items-center justify-center text-primary-foreground text-3xl font-bold">
-                  JB
-                </div>
+                <img
+                  src="/me.jpeg"
+                  alt="Jenish Bharucha"
+                  className="w-24 h-24 mx-auto mb-4 rounded-full object-cover ring-4 ring-primary/20 shadow-lg"
+                />
                 <h3 className="text-xl font-bold mb-1">Jenish Bharucha</h3>
                 <p className="text-muted-foreground text-sm mb-4">
-                  Waterloo, Ontario, Canada
+                  Toronto, Ontario, Canada
                 </p>
                 <div className="flex flex-wrap justify-center gap-2">
                   <span className="tag">BBA</span>

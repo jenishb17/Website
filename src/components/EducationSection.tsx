@@ -51,7 +51,7 @@ export const EducationSection = () => {
                   <GraduationCap className="h-8 w-8" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-1">University of Waterloo</h3>
+                  <h3 className="text-xl font-bold mb-1">Wilfrid Laurier University</h3>
                   <p className="text-primary font-medium">Double Degree Program</p>
                 </div>
               </div>

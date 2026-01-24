@@ -67,7 +67,7 @@ export const HeroSection = () => {
 
           {/* Subheadline */}
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up opacity-0 delay-200">
-            Finance + AI + analytics. I've built machine learning projects, automated workflows, 
+            Finance + AI + analytics. I've built machine learning projects, automated workflows,
             and investor-grade reporting tools.
           </p>
 
@@ -87,7 +87,7 @@ export const HeroSection = () => {
               className="gap-2 border-border hover:border-primary/50 px-8 py-6 text-base rounded-xl hover:bg-accent transition-all duration-300"
               asChild
             >
-              <a href="/resume.pdf" download>
+              <a href="/Jenish_CS_Resume_2025.pdf" download>
                 <Download className="h-4 w-4" />
                 Download Resume
               </a>

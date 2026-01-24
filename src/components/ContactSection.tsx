@@ -5,8 +5,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "bhar0304@mylaurier.ca",
-    href: "mailto:bhar0304@mylaurier.ca",
+    value: "bhar034@mylaurier.ca",
+    href: "mailto:bhar034@mylaurier.ca",
   },
   {
     icon: Phone,
@@ -17,7 +17,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Waterloo, Ontario, Canada",
+    value: "Toronto, Ontario, Canada",
     href: null,
   },
 ];
@@ -26,13 +26,13 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    href: "https://linkedin.com/in/jenishbharucha",
+    href: "https://www.linkedin.com/in/jenish-bharucha-9046a4203/",
     color: "hover:bg-blue-500 hover:text-white",
   },
   {
     icon: Github,
     label: "GitHub",
-    href: "https://github.com/jenishbharucha",
+    href: "https://github.com/jenishb17",
     color: "hover:bg-gray-900 hover:text-white",
   },
 ];
@@ -114,24 +114,21 @@ export const ContactSection = () => {
                   <p className="text-muted-foreground text-sm mb-6">
                     Whether you have a project in mind or just want to chat, I'd love to hear from you.
                   </p>
-                  <div className="flex flex-col sm:flex-row gap-3">
-                    <Button
-                      size="lg"
-                      className="gap-2 bg-primary hover:bg-primary-dark text-primary-foreground flex-1"
-                      asChild
+                  <div className="flex flex-col gap-3">
+                    <a
+                      href="mailto:bhar034@mylaurier.ca"
+                      className="inline-flex items-center justify-center gap-2 h-10 px-4 py-2 rounded-md bg-primary hover:bg-primary-dark text-primary-foreground text-sm font-medium w-full transition-colors"
                     >
-                      <a href="mailto:bhar0304@mylaurier.ca">
-                        <Send className="h-4 w-4" />
-                        Email Me
-                      </a>
-                    </Button>
+                      <Send className="h-4 w-4" />
+                      Email Me
+                    </a>
                     <Button
-                      size="lg"
+                      size="default"
                       variant="outline"
-                      className="gap-2 border-border hover:border-primary/50 flex-1"
+                      className="gap-2 border-border hover:border-primary/50 w-full"
                       asChild
                     >
-                      <a href="/resume.pdf" download>
+                      <a href="/Jenish_CS_Resume_2025.pdf" download>
                         Download Resume
                       </a>
                     </Button>

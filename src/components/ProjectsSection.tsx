@@ -9,9 +9,7 @@ const featuredProjects = [
     tags: ["Python", "LSTM", "Flask", "TensorFlow", "Finance"],
     icon: TrendingUp,
     gradient: "from-violet-500 to-purple-600",
-    github: "#",
-    demo: "#",
-    caseStudy: "#",
+    github: "https://github.com/jenishb17/AI-Stock-Predictor",
   },
   {
     title: "Air Math Calculator",
@@ -20,7 +18,7 @@ const featuredProjects = [
     tags: ["Python", "Detectron2", "Computer Vision"],
     icon: Calculator,
     gradient: "from-blue-500 to-indigo-600",
-    github: "https://github.com/yourusername/air-math-calculator",
+    github: "https://github.com/jenishb17/Air-Math-Calculator",
   },
   {
     title: "Automated PDF Scanning → Excel System",
@@ -29,7 +27,7 @@ const featuredProjects = [
     tags: ["Python", "VBA", "Excel", "Automation", "PDF Parsing"],
     icon: FileSpreadsheet,
     gradient: "from-emerald-500 to-teal-600",
-    github: "#",
+    github: "https://github.com/jenishb17/PDF-Scanner",
   },
   {
     title: "Word Report Generator (VBA)",
@@ -38,7 +36,7 @@ const featuredProjects = [
     tags: ["VBA", "Word", "Automation", "Finance"],
     icon: FileOutput,
     gradient: "from-amber-500 to-orange-600",
-    github: "#",
+    github: "https://github.com/jenishb17/Student-Database",
   },
 ];
 
@@ -104,24 +102,12 @@ export const ProjectsSection = () => {
 
                 {/* Actions */}
                 <div className="flex flex-wrap gap-2 mt-auto">
-                  {project.demo && (
-                    <Button size="sm" className="gap-1.5 bg-primary hover:bg-primary-dark text-primary-foreground">
-                      <ExternalLink className="h-3.5 w-3.5" />
-                      Live Demo
-                    </Button>
-                  )}
                   <Button size="sm" variant="outline" className="gap-1.5 border-border hover:border-primary/50" asChild>
                     <a href={project.github} target="_blank" rel="noopener noreferrer">
                       <Github className="h-3.5 w-3.5" />
                       GitHub
                     </a>
                   </Button>
-                  {project.caseStudy && (
-                    <Button size="sm" variant="ghost" className="gap-1.5 text-muted-foreground hover:text-primary">
-                      <FileText className="h-3.5 w-3.5" />
-                      Case Study
-                    </Button>
-                  )}
                 </div>
               </div>
             ))}
