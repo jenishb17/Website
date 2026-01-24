@@ -3,7 +3,7 @@ import { Code2, BarChart3, GraduationCap, Building2 } from "lucide-react";
 const experiences = [
   {
     title: "Junior Software Developer",
-    company: "MAD Elevators",
+    company: "MAD Elevator",
     period: "Jan 2025 — Apr 2025",
     icon: Code2,
     points: [

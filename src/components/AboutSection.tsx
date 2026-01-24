@@ -28,15 +28,7 @@ export const AboutSection = () => {
             {/* Text Content */}
             <div className="md:col-span-3 space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a fourth-year double-degree student (BBA + Computer Science) who mixes
-                business thinking with technical execution. I've worked in finance/operations,
-                built automation systems, created machine learning projects, and enjoy building
-                startup ideas.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                I care about clean design, strong documentation, and turning messy problems
-                into structured solutions. Whether it's optimizing a data pipeline or crafting
-                an investor-grade report, I focus on delivering impact.
+                I am a double-degree student in Computer Science and Business Administration at Wilfrid Laurier University, combining technical expertise with business insight. I gained hands-on experience as a Junior Software Developer intern at MAD Elevator. I leverage these skills to build full-stack web applications and AI tools like my stock predictor and PDF scanner. Passionate about innovation, technology, and space exploration, I am committed to solving real-world challenges that make a positive difference in society.
               </p>
             </div>
 
