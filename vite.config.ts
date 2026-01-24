@@ -12,7 +12,6 @@ export default defineConfig(() => ({
     },
   },
   plugins: [react()],
-  base: "/Website/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
