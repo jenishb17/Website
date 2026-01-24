@@ -1,6 +1,7 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "jenish-website",
   "private": true,
+  "homepage": "https://jenishb17.github.io/Website/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
